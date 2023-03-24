@@ -6,7 +6,8 @@ M = 4; N = 8. -> 30 */
 Console.Clear();
 int M = GetNumberFromUser("Введите значение M: ", "Ошибка ввода!");
 int N = GetNumberFromUser("Введите значение N: ", "Ошибка ввода!");
-Console.WriteLine(M > N ? "Ошибка ввода! M должно быть больше N" : $"M = {M}; N = {N} -> {GetSumNumbersFromMToN(M, N)}");
+Console.WriteLine(M > N ? "Ошибка ввода! M должно быть больше N" : $"M = {M}; N = {N} -> {GetSumNumbersFromMToN(M, N)}"); /* если M 
+превышает N, то сообщаем об ошибке при вводе, иначе выводим ответ с суммой*/
 //////////////////////////////////////////////////////////////////////////////////
 // Описание методов
 // Запрашивает у пользователя целое положительное число
@@ -23,7 +24,7 @@ int GetNumberFromUser(string message, string errorMessage)
         Console.WriteLine(errorMessage);
     }
 }
-//
+// возвращает сумму натуральных чисел от M до N
 int GetSumNumbersFromMToN(int M, int N)
 {
     if (M == N)
