@@ -23,7 +23,7 @@ int GetNumberFromUser(string message, string errorMessage)
         Console.WriteLine(errorMessage);
     }
 }
-//
+// метод возвращает строку, сформированную из натуральных чисел от 1 до N, разделенных запятой
 string GetNumbersFromNTo1(int N, int finish)
 {
     if (N == finish)
